@@ -1,0 +1,14 @@
+{
+    "header": {
+        "about": "Inicio",
+        "skills": "Habilidades",
+        "certifications": "Certificaciones",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "about": {
+        "description":  "Ingeniero de software con mas de 9 años de experiencia orientado a resultados, enfocado y relacionado con todas las tecnologías necesarias para dar vida al proyecto, desarrollo front-end, JavaScript Angular/React, NodeJS, C#, .NET, pruebas unitarias, e2e y bases de datos relacionales y no relacionales. todo para brindar al usuario la mejor experiencia y funcionalidad, Me encanta trabajar en equipo por lo que tengo experiencia liderando equipos utilizando el marco de trabajo scrum, motivar y ayudar a los demas crear, construir y aprender cosas nuevas. Siempre busco nuevos desafíos para ampliar mi conocimiento y experiencia.",
+        "download": "Descargar CV",
+        "contact": "Contacto"
+    }
+}

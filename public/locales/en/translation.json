@@ -1,0 +1,15 @@
+{
+    "header": {
+        "about": "About",
+        "skills": "Skills",
+        "certifications": "Certifications",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "about": {
+        "description": 
+        "Software engineer with more than 9 years of experience oriented to results, focused and related to all the necessary technologies to bring the project to life, front-end development, JavaScript Angular/React, NodeJS, C#, .NET, unit tests, e2e and relational and non-relational databases. everything to provide the user with the best experience and functionality. I love working in a team, so I have experience leading teams using the scrum framework and virtual collaboration to succed on remote work, motivating and helping others create, build and learn new things. I am always looking for new challenges to broaden my knowledge and experience.",
+        "download": "Download CV",
+        "contact": "Contact"
+    }
+  }
