@@ -10,7 +10,7 @@ import {
 const Header = () => {
     const { t, i18n } = useTranslation();
   return (
-    <header className="p-3 text-bg-secondary shadow">
+    <header id="header" className="p-3 text-bg-secondary shadow fixed-top">
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a

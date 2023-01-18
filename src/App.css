@@ -1,0 +1,31 @@
+body {
+    padding-top: 86px;
+    overflow-x: hidden;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    
+    70% {
+      transform: scale(0.95);
+    }
+    
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Pagination */
+  body .pagination .page-item > .page-link {
+    color: #071e3d;
+  }
+
+  body .pagination .page-item.active > .page-link {
+    color: #ffffff;
+  }
