@@ -1,6 +1,7 @@
 import logo from "../assets/img/layout/logo.png";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-scroll";
 import {
   faGithub,
   faStackOverflow,
@@ -8,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
-    const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <header id="header" className="p-3 text-bg-secondary shadow fixed-top">
       <div className="container">
@@ -19,29 +20,61 @@ const Header = () => {
           >
             <img src={logo} width="75px" height="auto" alt="Logo" />
           </a>
-
-          <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li>
-              <a href="/" className="nav-link px-2 text-warning">
-                {t('header.about')}
-              </a>
-            </li>
-            <li>
-              <a href="/" className="nav-link px-2 text-white">
-              {t('header.skills')}
-              </a>
-            </li>
-            <li>
-              <a href="/" className="nav-link px-2 text-white">
-              {t('header.certifications')}
-              </a>
-            </li>
-            <li>
-              <a href="/" className="nav-link px-2 text-white">
-              {t('header.projects')}
-              </a>
-            </li>
-          </ul>
+          <nav
+            id="menu"
+            className="navbar col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <ul className="nav">
+              <li className="nav-item">
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-86}
+                  duration={500}
+                  className="nav-link px-2"
+                >
+                  {t("header.about")}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  offset={-86}
+                  duration={500}
+                  className="nav-link px-2"
+                >
+                  {t("header.skills")}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="certifications"
+                  spy={true}
+                  smooth={true}
+                  offset={-86}
+                  duration={500}
+                  className="nav-link px-2"
+                >
+                  {t("header.certifications")}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-86}
+                  duration={500}
+                  className="nav-link px-2"
+                >
+                  {t("header.projects")}
+                </Link>
+              </li>
+            </ul>
+          </nav>
 
           <ul className="socialIcons nav col-12 col-lg-auto mb-2 me-4 justify-content-center mb-md-0">
             <li>
@@ -76,17 +109,32 @@ const Header = () => {
             </li>
           </ul>
 
-          <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-            <select onChange={(event)=>{ i18n.changeLanguage(event.target.value) }} className="form-select form-control form-control-dark text-white text-bg-secondary">
+          <form
+            className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+            role="search"
+          >
+            <select
+              onChange={(event) => {
+                i18n.changeLanguage(event.target.value);
+              }}
+              className="form-select form-control form-control-dark text-white text-bg-secondary"
+            >
               <option value="en">English</option>
               <option value="es">Español</option>
             </select>
           </form>
 
           <div className="text-end">
-            <button type="button" className="btn btn-warning">
-            {t('header.contact')}
-            </button>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-86}
+              duration={500}
+              className="btn btn-warning"
+            >
+              {t("header.contact")}
+            </Link>
           </div>
         </div>
       </div>

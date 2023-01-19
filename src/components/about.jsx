@@ -3,6 +3,7 @@ import languages from "../assets/img/layout/languages.png";
 import scrum from "../assets/img/badges/Scrum-Foundation-Professional-Certificate-SFPC_-2021_480x480.webp";
 import remoteWork from "../assets/img/badges/remote_work_badge.png";
 import lifeLong from "../assets/img/badges/lifelong-learning.png";
+import { Link } from "react-scroll";
 
 const About = () => {
   const { t } = useTranslation();
@@ -66,12 +67,16 @@ const About = () => {
               >
                 {t("about.download")}
               </button>
-              <button
-                type="button"
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-86}
+                duration={500}
                 className="btn btn-outline-secondary btn-lg px-4"
               >
                 {t("about.contact")}
-              </button>
+              </Link>
             </div>
           </div>
         </div>

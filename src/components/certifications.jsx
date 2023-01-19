@@ -25,7 +25,7 @@ const Certifications = () => {
                   />
                 </div>
                 <div className="mb-2">
-                  <label for="institution" className="form-label">
+                  <label htmlFor="institution" className="form-label">
                   {t('certifications.form.institution')}
                   </label>
                   <select
@@ -38,7 +38,7 @@ const Certifications = () => {
                 </div>
 
                 <div className="mb-2">
-                  <label for="area" className="form-label">
+                  <label htmlFor="area" className="form-label">
                   {t('certifications.form.area')}
                   </label>
                   <select id="area" name="area" className="form-select">
@@ -47,7 +47,7 @@ const Certifications = () => {
                 </div>
 
                 <div className="mb-2">
-                  <label for="dateFrom" className="form-label">
+                  <label htmlFor="dateFrom" className="form-label">
                   {t('certifications.form.dateFrom')}
                   </label>
                   <input
@@ -59,7 +59,7 @@ const Certifications = () => {
                 </div>
 
                 <div className="mb-2">
-                  <label for="dateTo" className="form-label">
+                  <label htmlFor="dateTo" className="form-label">
                   {t('certifications.form.dateTo')}
                   </label>
                   <input

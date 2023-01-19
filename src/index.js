@@ -5,11 +5,22 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import "./custom.scss";
 import "./i18n";
+import "jquery/src/jquery";
+import "bootstrap/dist/js/bootstrap";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense
+      fallback={
+        <div
+          class="position-fixed top-50 start-50 translate-middle spinner-grow text-primary"
+          role="status"
+        >
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      }
+    >
       <App />
     </Suspense>
   </React.StrictMode>

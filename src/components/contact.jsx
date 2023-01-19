@@ -5,54 +5,54 @@ const Contact = () => {
 
   return (
     <section id="contact" className="mt-5 py-5 bg-primary">
-      <div className="container">
+      <div className="container py-5">
       <div className="container col-md-6">
         <div className="card shadow p-5">
 
         <h1 className="display-4 text-center mb-4 fw-normal">
-          Contact
+          {t('contact.title')}
         </h1>
 
             <form id="contactForm">
               <div className="mb-3">
-                <label className="form-label" for="name">
-                  Name
+                <label className="form-label" htmlFor="name">
+                  {t('contact.form.name')}
                 </label>
                 <input
                   className="form-control"
                   id="name"
                   type="text"
-                  placeholder="Name"
+                  placeholder={t('contact.form.name')}
                 />
               </div>
 
               <div className="mb-3">
-                <label className="form-label" for="emailAddress">
-                  Email Address
+                <label className="form-label" htmlFor="emailAddress">
+                {t('contact.form.emailAddress')}
                 </label>
                 <input
                   className="form-control"
                   id="emailAddress"
                   type="email"
-                  placeholder="Email Address"
+                  placeholder={t('contact.form.emailAddress')}
                 />
               </div>
 
               <div className="mb-3">
-                <label className="form-label" for="message">
-                  Message
+                <label className="form-label" htmlFor="message">
+                {t('contact.form.message')}
                 </label>
                 <textarea
                   className="form-control"
                   id="message"
                   type="text"
-                  placeholder="Message"
+                  placeholder={t('contact.form.message')}
                 ></textarea>
               </div>
 
               
                 <button className="btn btn-outline-primary" type="submit">
-                  Submit
+                {t('contact.form.send')}
                 </button>
             </form>
         </div>

@@ -33,6 +33,18 @@
             "next": "Siguiente"
         }
     },
+    "projects": {
+        "title": "Projectos"
+    },
+    "contact": {
+        "title": "Contacto",
+        "form": {
+            "name": "Nombre",
+            "emailAddress": "Email",
+            "message": "Mensaje",
+            "send": "Enviar"
+        }
+    },
     "footer": {
         "copy": "© 2023 Portfolio. All rights reserved. Powered by Jose Doñe and React."
     }

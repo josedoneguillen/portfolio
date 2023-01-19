@@ -21,6 +21,17 @@ body {
     }
   }
 
+  /* Menu */
+  body #menu ul.nav > li.nav-item > a.nav-link {
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  body #menu ul.nav > li.nav-item > a.nav-link:hover,
+  body #menu ul.nav > li.nav-item > a.nav-link.active{
+    color: #ffdf37;
+  }
+
   /* Pagination */
   body .pagination .page-item > .page-link {
     color: #071e3d;
@@ -28,4 +39,18 @@ body {
 
   body .pagination .page-item.active > .page-link {
     color: #ffffff;
+  }
+
+  /* Nav pills */
+  .nav-pills .nav-link {
+    color: #606366;
+  }
+
+  .nav-pills .nav-link:hover {
+    color: #00b8d4
+  }
+
+  /* Footer */
+  #scrollToTop {
+    cursor: pointer;
   }
